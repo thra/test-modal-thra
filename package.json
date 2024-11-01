@@ -2,14 +2,19 @@
   "name": "test-modal-thra",
   "description": "A simple and basic reusable modal component using react",
   "private": false,
-  "version": "0.3.0",
+  "version": "0.5.0",
   "type": "module",
-  "main": "dist",
-  "module": "dist",
   "files": [
-    "build",
-    "README.md"
+    "dist"
   ],
+  "main": "./dist/test-modal-thra.umd.js",
+  "module": "./dist/test-modal-thra.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/test-modal-thra.es.js",
+      "require": "./dist/test-modal-thra.umd.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thra/test-modal-thra.git"
